@@ -1,16 +1,16 @@
-# 🧠 Neural Network from Scratch
+# Neural Network from Scratch
 
 This project explores the core mechanics of deep learning by building and training a neural network from scratch using Python and NumPy. Rather than relying on high-level libraries such as TensorFlow or PyTorch, I implemented the main mathematical ideas manually, including forward propagation, backpropagation, and gradient descent. I wanted to understand how neural networks *actually* learn, not just how to call a library that learns for me.
 
 The repository includes two implementations: a single-layer network that solves a simple linearly separable problem, and a multi-layer network with one hidden layer that can handle a more complex, non-linear pattern similar to XOR.
 
-## 📦 Technologies
+## Technologies
 
 - `Python`
 - `NumPy`
 - `Jupyter Notebook`
 
-## ⚙️ What I Built
+## What I Built
 
 **Mathematical implementation**
 
@@ -24,7 +24,7 @@ The first version maps an input matrix `X` of shape 4×3 directly to an output `
 
 The training loop runs for thousands of iterations and follows a simple rhythm. The model makes predictions through a forward pass (matrix multiplication followed by sigmoid activation), calculates the error against the target output, passes that error backwards through the network using the sigmoid derivative to work out how each weight should adjust, and finally updates the weights with gradient descent. Watching the error shrink iteration by iteration is what made the whole process click for me.
 
-## 📚 What I Learned
+## What I Learned
 
 **Matrix mechanics**
 
@@ -42,7 +42,7 @@ Backpropagation became far easier to understand once I could see it in code. In 
 
 These ideas connect directly to applications I care about as a finance student. The same matrix operations and error-correction process form the basis of models used in predictive analytics and risk assessment, such as credit scoring and fraud detection, and hidden layers are central to recommendation engines that find patterns in user behaviour. Computer vision and NLP use far larger models, but the underlying principle is identical: calculate an error, work out how it changes the weights, and keep adjusting until performance improves.
 
-## 💬 How can it be improved?
+## How can it be improved?
 
 - Add more hidden layers and experiment with their sizes
 - Try alternative activation functions (ReLU, tanh) and compare convergence
@@ -50,7 +50,7 @@ These ideas connect directly to applications I care about as a finance student. 
 - Visualise the error curve over training iterations
 - Apply the network to a real dataset, such as credit default classification
 
-## 🔌 Running the Project
+## Running the Project
 
 1. Clone the repository to your local machine
 2. Install NumPy: `pip install numpy`
@@ -61,6 +61,6 @@ jupyter notebook single_layer_network.ipynb
 jupyter notebook multi_layer_network.ipynb
 ```
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 Core logic and architecture adapted from the tutorial [A Neural Network in 11 Lines of Python](https://iamtrask.github.io/2015/07/12/basic-python-network/) by [iamtrask](https://github.com/iamtrask). All implementation, experimentation, and write-up are my own.
